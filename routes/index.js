@@ -16,10 +16,10 @@ var config = {
 
 var connection = new Connection(config);
 
-router.get('/')
+
 
 /* GET home page. */
-router.get('/data', function(req, res, next) {
+router.get('/', function(req, res, next) {
 
   var rows = [];
   var request = new Request("select * from UserAccounts", function(err, rowCount){
